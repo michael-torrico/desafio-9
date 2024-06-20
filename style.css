@@ -1,0 +1,148 @@
+
+body{
+    font-family: 'Times New Roman'
+}
+header{
+    background-image: url(imagenes/fondoTitulo.jpg);
+    text-align: center;
+    background-position: center; 
+    background-size: cover;
+}
+.boton{
+    padding: 7px 16px;
+    border-radius: 15px;
+    color: rgb(49, 37, 102);
+    border: 3px solid #423f3f;
+    background-color: white;
+    transition: background-color 0.3s ease; 
+}
+.boton:hover{
+    background-color: #dbbfbf;
+}
+
+nav{
+    
+    position: fixed;
+    left: 0px;
+    z-index: 100;
+    
+}
+ul{
+    list-style: none;
+}
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    height: 500px;
+    width: 300px;
+    margin: 40px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    
+}
+h3{
+    border: 1px  solid #8a8585;
+    font-size: 20px;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+.botonProducto{
+    padding: 10px 20px;
+    font-size: 15px;
+    color: white;
+    background-color: #313131; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+.botonProducto:hover {
+    background-color: #ffffff; 
+    color: #1b1a1a;
+    border: 1px solid black;
+}
+
+@media(min-width:1000px){
+    .productos{
+        background-color: cadetblue;
+        flex-direction: row;
+    }
+    .contenedor{
+        border: 2px solid #000;
+    }
+    footer{
+        background-color: #85a5c0;
+    }
+}
+@media(max-width:1000px){
+    body{
+        background-color:#000
+       } 
+    .productos{
+        background-color: rgb(22, 32, 32);
+        flex-direction: column;
+    }
+    .contenedor{
+        border: 2px solid #ccc9c9;
+    }
+    h2{
+        background-color: white;
+    }
+    footer{
+        background-color: #333;
+    }
+   
+}
+
+.carruselContenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px ; 
+   
+}
+.carousel {
+    width: auto; 
+    max-width: 500px;
+    
+}
+.carousel-inner img {
+    width: 100%;
+    height: 740px; 
+    object-fit: cover; 
+}
+
+
+
+
+
+footer {
+  
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.iconos{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.iconos li {
+    display: inline;
+}
+
+.iconos a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
